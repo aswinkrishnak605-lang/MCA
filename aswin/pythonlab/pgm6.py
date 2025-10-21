@@ -1,0 +1,5 @@
+list1 = list(map(int,input("enter first list of integers (separated by space):").split()))
+list2 = list(map(int,input("enter second list of integers (separate by space):").split()))
+print("\n(a) samelength:",len(list1) == len(list2))
+print("(b) samesum:",sum(list1) == sum(list2))
+print("(c) commonvalues:",bool(set(list1) & set(list2)))
