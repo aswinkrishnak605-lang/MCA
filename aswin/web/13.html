@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+.bulb {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  height: 90vh;
+}
+.buttons button {
+  padding: 1rem;
+  background-color: yellow;
+  border: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.buttons {
+  padding: 1rem;
+}
+</style>
+</head>
+<body>
+<div class="bulb">
+  <img id="bulb-img" src="https://img.freepik.com/premium-vector/single-lightbulb-white_1308-40009.jpg?semt=ais_hybrid&w=740&q=80" height="400" width="300">
+  <div class="buttons">
+    <button id="on">ON</button>
+    <button id="off">OFF</button>
+  </div>
+</div>
+
+<script>
+let bulbImage = document.getElementById('bulb-img');
+let bulbon = document.getElementById('on');
+let bulboff = document.getElementById('off');
+
+bulbon.addEventListener('click', function() {
+  bulbImage.src = 'https://img.jagranjosh.com/images/2025/08/12/article/image/what-is-the-science-behind-light-bulb-1754999689912.jpg';
+});
+
+bulboff.addEventListener('click', function() {
+  bulbImage.src = 'https://img.freepik.com/premium-vector/single-lightbulb-white_1308-40009.jpg?semt=ais_hybrid&w=740&q=80';
+});
+</script>
+</body>
+</html>
+
